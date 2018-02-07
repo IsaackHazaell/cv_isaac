@@ -2,7 +2,13 @@
 ul {
   list-style-type: none;
 }
+.flex-container {
+  display: flex;
+}
 /* -------------- ASIDE ------------- */
+.flex-aside {
+  flex-basis: 200px;
+}
 aside {
   background-color: #353940;
 }
@@ -22,18 +28,41 @@ aside section h2:first-child{
 }
 
 /* -------------- MAIN ------------- */
+main section > h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 
 .hero {
   background-color: #F7DDC3;
+  box-shadow: 3px 3px 30px 1px #353940 inset;
 }
 
 .hero h2 {
   color: white;
   border-top: 2px solid white;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
-.hero {
-  box-shadow: 3px 3px 30px 1px #353940 inset; 
+.about-me {
+  background-color: #F7DDC3;
+}
+
+.about-me h2 {
+  background-color: white;
+}
+
+article h3 {
+  font-weight: bold;
+}
+
+article h4 {
+  font-weight: bold;
+}
+
+article ul {
+  list-style-type: square;
 }
 
 /*
