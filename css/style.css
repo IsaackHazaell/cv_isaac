@@ -1,22 +1,29 @@
+/* -------------- LAYOUT ------------- */
+.flex-container {
+  display: flex;
+  width: 1200px;
+}
 /* -------------- GENERAL ------------- */
 ul {
   list-style-type: none;
 }
-.flex-container {
-  display: flex;
+h1{
+  text-transform: uppercase;
+}
+h2{
+  text-transform: uppercase;
 }
 /* -------------- ASIDE ------------- */
-.flex-aside {
-  flex-basis: 200px;
-}
 aside {
   background-color: #353940;
+  width: 33%;
+  margin-right: 3%;
 }
 aside * {
   color: white;
 }
 aside h2 {
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 aside section h2:first-child{
   border-bottom: 2px solid white;
@@ -36,17 +43,19 @@ main section > h2 {
 .hero {
   background-color: #F7DDC3;
   box-shadow: 3px 3px 30px 1px #353940 inset;
+  padding: 15% 0%;
+  text-align: center;
 }
 
 .hero h2 {
   color: white;
   border-top: 2px solid white;
   text-transform: none;
-  letter-spacing: normal;
+  letter-spacing: 10px;
 }
 
 .about-me {
-  background-color: #F7DDC3;
+  background-color: #529908;
 }
 
 .about-me h2 {
@@ -65,6 +74,72 @@ article ul {
   list-style-type: square;
 }
 
+/* ------ Reference ------ */
+.references{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.references article{
+  width: 50%;
+  text-align: center;
+}
+
+/* ------ DL -------- */
+/* dt {
+  font-weight: bolder;
+  clear: left;
+  width: 30%;
+  float: left;
+  border-top: 1px solid white;
+}
+dd {
+  clear: right;
+  width: 30%;
+  float: left;
+  border-top: 1px solid white;
+} */
+
+/*Con flexbox*/
+dt:last-of-type,
+dd:last-of-type{
+  border-bottom: 1px solid white;
+}
+dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+dt{
+  font-weight: bolder;
+  flex-basis: 40%;
+  border-top: 1px solid white;
+  margin: 0;
+}
+dd{
+  flex-basis: 40%;
+  border-top: 1px solid white;
+  margin: 0;
+}
+
+/* ----- Social -----*/
+.fb::before{
+  content: '\f209';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.social-item::before{
+  padding-right: 15px;
+}
+
+meter{
+  display: block;
+  width: 80%;
+}
+
+meter::-webkit-meter-optimum-value{
+  background: none;
+  background-color: green;
+}
 /*
 * {
   color: blue;
