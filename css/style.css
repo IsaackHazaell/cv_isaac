@@ -13,9 +13,13 @@ h1{
 h2{
   text-transform: uppercase;
 }
+.background1 {
+  background-color: #1B261B;
+}
 /* -------------- ASIDE ------------- */
 aside {
   background-color: #353940;
+  box-shadow: 3px 3px 30px 1px #007982 inset;
   width: 33%;
   margin-right: 3%;
 }
@@ -41,8 +45,8 @@ main section > h2 {
 }
 
 .hero {
-  background-color: #F7DDC3;
-  box-shadow: 3px 3px 30px 1px #353940 inset;
+  background-color: #353940;
+  box-shadow: 3px 3px 30px 1px #007982 inset;
   padding: 15% 0%;
   text-align: center;
 }
@@ -55,11 +59,14 @@ main section > h2 {
 }
 
 .about-me {
-  background-color: #529908;
+  background-color: #787A7A;
+  color: white;
+  box-shadow: 3px 3px 30px 1px #0DE8D7 inset;
+  margin-right: 3%;
 }
 
 .about-me h2 {
-  background-color: white;
+  background-color: #353940;
 }
 
 article h3 {
@@ -138,21 +145,5 @@ meter{
 
 meter::-webkit-meter-optimum-value{
   background: none;
-  background-color: green;
+  background-color: gray;
 }
-/*
-* {
-  color: blue;
-}
-p {
-  color: red;
-}
-.bonito{
-  background-color: lightblue;
-}
-ul {
-  list-style-type: none;
-}
-article ul {
-  list-style-type: square;
-}*/
